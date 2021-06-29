@@ -17,12 +17,8 @@ const getPolyfills = require('./rn-get-polyfills');
  * integration tests during local development or on CI services.
  */
 module.exports = {
-  resolver: {
-    extraNodeModules: {
-      'react-native': __dirname,
-    },
+  extraNodeModules: {
+    'react-native': __dirname,
   },
-  serializer: {
-    getPolyfills,
-  },
+  getPolyfills,
 };
